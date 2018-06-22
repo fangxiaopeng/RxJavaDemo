@@ -1,7 +1,9 @@
-package com.example.fxp.rxjavademo;
+package com.example.fxp.rxjavademo.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.fxp.rxjavademo.R;
 
 public class MainActivity extends AppCompatActivity {
 
