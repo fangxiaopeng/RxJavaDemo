@@ -1,4 +1,4 @@
-package com.example.fxp.rxjavademo.activity;
+package com.example.rxjavademo.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
