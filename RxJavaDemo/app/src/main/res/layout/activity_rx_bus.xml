@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rxjavademo.activity.RxBusActivity">
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RxBus Example"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/txt_post_msg_lable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txt_title"
+        android:layout_marginTop="50dp"
+        android:text="Post Test："/>
+
+    <EditText
+        android:id="@+id/edt_msg_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txt_post_msg_lable"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="@id/constraintLayout"
+        app:layout_constraintRight_toLeftOf="@id/btn_post_msg"
+        android:hint="msg input area"/>
+
+    <Button
+        android:id="@+id/btn_post_msg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txt_post_msg_lable"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@id/constraintLayout"
+        android:text="POST" />
+
+    <TextView
+        android:id="@+id/txt_recieve_msg_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edt_msg_input"
+        android:layout_marginTop="50dp"
+        android:text="Msg Received："/>
+
+    <TextView
+        android:id="@+id/txt_recieve_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txt_recieve_msg_lable"
+        android:layout_marginTop="20dp"
+        android:text=""/>
+
+</android.support.constraint.ConstraintLayout>
