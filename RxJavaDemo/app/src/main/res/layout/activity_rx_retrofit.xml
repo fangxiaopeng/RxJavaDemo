@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rxjavademo.activity.RxRetrofitActivity">
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RxJava + Retrofit Example"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btn_get_data"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txt_title"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toLeftOf="@id/constraintLayout"
+        app:layout_constraintRight_toLeftOf="@id/btn_post_data"
+        android:text="GET"/>
+
+    <Button
+        android:id="@+id/btn_post_data"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txt_title"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toRightOf="@id/btn_get_data"
+        app:layout_constraintRight_toRightOf="@id/constraintLayout"
+        android:text="POST"/>
+
+    <TextView
+        android:id="@+id/txt_result_lable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Requet Result："
+        app:layout_constraintTop_toBottomOf="@id/btn_get_data"
+        android:layout_marginTop="10dp"/>
+
+    <ScrollView
+        app:layout_constraintTop_toBottomOf="@id/txt_result_lable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_result_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=""/>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
